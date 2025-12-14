@@ -12,10 +12,15 @@ public class MvcConfig {
         return new WebMvcConfigurer() {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
-                registry.addMapping("/api/**")
-                        .allowedOrigins("http://localhost:4200", "http://good-company.com")
+                registry.addMapping("/**")
+                        .allowedOrigins(
+                                "http://bookstore.modoblu.com",
+                                "http://apibookstore.modoblu.com",
+                                "http://localhost:4206"
+                        )
                         .allowedMethods("*")
-                        .exposedHeaders("*");
+                        .exposedHeaders("*")
+                        .allowCredentials(true);  // <--- importante si envías cookies o cabeceras de autorización
             }
         };
     }
