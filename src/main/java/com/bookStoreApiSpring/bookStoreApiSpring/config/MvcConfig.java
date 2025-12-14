@@ -16,7 +16,10 @@ public class MvcConfig {
                         .allowedOrigins(
                                 "http://bookstore.modoblu.com",
                                 "http://apibookstore.modoblu.com",
-                                "http://localhost:4206"
+                                "http://localhost:4206",
+
+                                "https://bookstore.modoblu.com",
+                                "https://apibookstore.modoblu.com"
                         )
                         .allowedMethods("*")
                         .exposedHeaders("*")
