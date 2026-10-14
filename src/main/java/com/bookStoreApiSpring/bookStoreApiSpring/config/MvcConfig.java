@@ -14,12 +14,12 @@ public class MvcConfig {
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**")
                         .allowedOrigins(
-                                "http://bookstore.modoblu.com",
-                                "http://apibookstore.modoblu.com",
+                                "http://bookstore.faseblu.com",
+                                "http://apibookstore.faseblu.com",
                                 "http://localhost:4206",
 
-                                "https://bookstore.modoblu.com",
-                                "https://apibookstore.modoblu.com"
+                                "https://bookstore.faseblu.com",
+                                "https://apibookstore.faseblu.com"
                         )
                         .allowedMethods("*")
                         .exposedHeaders("*")
